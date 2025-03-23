@@ -1,0 +1,22 @@
+{
+  "name": "social-network-recommendation",
+  "version": "1.0.0",
+  "description": "POC de un sistema de recomendación basado en redes de bipartición",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node --env-file=.env src/app.js",
+    "dev": "nodemon --env-file=.env src/app.js",
+    "test": "node --env-file=.env node_modules/.bin/jest --coverage",
+    "seed": "node --env-file=.env scripts/seedDatabase.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "sqlite3": "^5.1.7",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^6.3.4"
+  }
+}
