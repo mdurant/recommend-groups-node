@@ -1,4 +1,5 @@
 const winston = require('winston');
+process.loadEnvFile();
 
 const logger = winston.createLogger({
     level: 'info',

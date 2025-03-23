@@ -5,9 +5,9 @@
   "main": "src/app.js",
   "scripts": {
     "start": "node --env-file=.env src/app.js",
-    "dev": "nodemon --env-file=.env src/app.js",
+    "dev": "nodemon --watch --env-file=.env src/app.js",
     "test": "node --env-file=.env node_modules/.bin/jest --coverage",
-    "seed": "node --env-file=.env scripts/seedDatabase.js"
+    "seed": "node ../src/scripts/seedDatabase.js"
   },
   "dependencies": {
     "express": "^4.19.2",
